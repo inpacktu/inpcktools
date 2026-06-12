@@ -1,0 +1,9 @@
+Copyright (c) 2026 Inpacktu. Todos os direitos reservados.
+
+O código-fonte contido neste repositório é de propriedade exclusiva dos seus autores. 
+Não é permitida a cópia, modificação, distribuição, publicação ou uso comercial do 
+código-fonte, no todo ou em parte, sem a autorização prévia e por escrito dos 
+detentores dos direitos autorais.
+
+A visualização do código-fonte é permitida estritamente para fins de estudo, 
+auditoria de segurança ou contribuição direta para este repositório oficial.
