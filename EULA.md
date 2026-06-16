@@ -1,4 +1,4 @@
-# Acordo de Licença de Usuário Final (EULA) - INPKT Tools v1.0.1
+# Acordo de Licença de Usuário Final (EULA) - INPKT Tools v1.0.2
 
 Ao baixar e utilizar os executáveis/binários desta aplicação, você concorda com os seguintes termos:
 

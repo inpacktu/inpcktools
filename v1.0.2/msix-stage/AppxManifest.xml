@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+    xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+    IgnorableNamespaces="uap rescap uap10">
+
+  <!-- 
+    IMPORTANTE: Os campos Name, Publisher e PublisherDisplayName devem coincidir 
+    EXATAMENTE com o que consta no seu Microsoft Partner Center (App Management -> Product Identity).
+    Caso contrário, a Loja Microsoft rejeitará o pacote .msix no upload.
+  -->
+  <Identity
+      Name="Inpacktu.INPKTTools"
+      Publisher="CN=CB9B3A31-4AA4-458D-B7F7-D2E473C2DD8F"
+      Version="1.0.2.0"
+      ProcessorArchitecture="x64" />
+
+  <Properties>
+    <DisplayName>INPKT Tools</DisplayName>
+    <PublisherDisplayName>Inpacktu</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Resources>
+    <Resource Language="pt-BR" />
+    <Resource Language="en-US" />
+    <Resource Language="es-ES" />
+  </Resources>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="1.0.2.0" MaxVersionTested="10.0.22621.0" />
+  </Dependencies>
+
+  <Capabilities>
+    <!-- Necessário para empacotar executáveis clássicos Win32 -->
+    <rescap:Capability Name="runFullTrust"/>
+  </Capabilities>
+
+  <Applications>
+    <Application
+        Id="INPKTToolsApp"
+        Executable="inpktools.exe"
+        uap10:RuntimeBehavior="packagedClassicApp"
+        uap10:TrustLevel="mediumIL">
+      <uap:VisualElements
+          DisplayName="INPKT Tools"
+          Description="Developer Toolkit by Inpacktu"
+          Square150x150Logo="Assets\Square150x150Logo.png"
+          Square44x44Logo="Assets\Square44x44Logo.png"
+          BackgroundColor="#1e1e24">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>
